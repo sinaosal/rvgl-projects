@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XMenu RVGL Chaos</title>
+  <meta name="description" content="XMenu - Trainer menu and Chaos Mod for RVGL 23.1030a1 (64-bit).">
+  <link rel="icon" type="image/png" href="XMenu-Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="XMenu-Logo.png" alt="XMenu" width="200">
+  <h1>XMenu RVGL Chaos</h1>
+  <p>Trainer menu and Chaos Mod for RVGL 23.1030a1 (64-bit).</p>
+
+  <p><a href="XMenu-0.1.0.zip" download>Download XMenu 0.1.0 (win64, 1.6 MB)</a></p>
+
+  <h2>Install</h2>
+  <p><b>RVGL Launcher:</b> close RVGL, then copy the <code>rvgl_win64</code> and <code>rvgl_assets</code> folders from the zip into <code>%LOCALAPPDATA%\rvmm\packs</code> (merge and replace).</p>
+  <p><b>Standalone:</b> copy the contents of <code>rvgl_win64</code> and <code>rvgl_assets</code> next to <code>rvgl.exe</code>.</p>
+  <p>To remove it, delete <code>version.dll</code> and <code>XMenu.dll</code>.</p>
+
+  <h2>Keys</h2>
+  <p>
+    F7 - open/close menu<br>
+    Numpad 8/2 - up/down<br>
+    Numpad 4/6 - change value<br>
+    Numpad 5 - select<br>
+    Numpad 0 - back<br>
+    F6 - airbreak (W/S up/down, Numpad 8/2/4/6 move)<br>
+    Hold middle mouse - fly where you look (if turned on)<br>
+    ; - unlimited ammo<br>
+    = - no car collision<br>
+    - - reset car<br>
+    ] (hold) - speed boost<br>
+    Controller: RB + D-Pad Right opens the menu, A select, B back
+  </p>
+  <p>Keys are for a US keyboard and can be changed in <code>ZMenuRVGL.ini</code>.</p>
+
+  <h2>Notes</h2>
+  <p>Only RVGL 23.1030a1 is supported. XMenu turns itself off in online lobbies.</p>
+
+  <h2>Features</h2>
+
+  <h3>General</h3>
+  <ul>
+    <li>Works with standalone RVGL and the RVGL Launcher.</li>
+    <li>Looks like the original ZMenu: game font, numpad controls, hints, controller support.</li>
+    <li>Settings are saved in <code>ZMenuRVGL.ini</code> and the ZMenu folder. Old ZMenu settings still work.</li>
+    <li>On other RVGL versions the menu opens, but game features stay off.</li>
+    <li>Online: XMenu closes, turns off all cheats and Chaos, and stays locked until you leave the lobby.</li>
+  </ul>
+
+  <h3>Teleports</h3>
+  <ul>
+    <li>10 save slots per track (save, load, save to .ini)</li>
+    <li>Teleport to race start</li>
+    <li>Teleport to a random car</li>
+  </ul>
+
+  <h3>Spawn</h3>
+  <ul>
+    <li>Spawn any car, as many as the car limit allows</li>
+    <li>Pick the AI type: CPU, Local, Remote, Ghost, Replay, Frontend, Display, CalcStats</li>
+    <li>Spawn next to you or on the start grid</li>
+    <li>Change your own car to any car mid-race</li>
+    <li>Spawn any object and select it</li>
+    <li>Move, rotate, teleport to or delete the selected object</li>
+  </ul>
+
+  <h3>Racers</h3>
+  <ul>
+    <li>List of every racer in the race</li>
+    <li>For each racer: switch to, explode, teleport to, bring to you, reset</li>
+    <li>AI Control: let the AI drive your car</li>
+  </ul>
+
+  <h3>Options</h3>
+  <ul>
+    <li>Speedometer, coordinates, FPS, slow FPS, lock camera</li>
+    <li>Info display with 8 slots (car name, player, timestep, pointers, track, object count and more)</li>
+    <li>Car size (0.1x to 10x) and car gravity (0x to 10x)</li>
+    <li>Change the current race: laps, pickups on/off, random cars, random track</li>
+    <li>Cameras: Free, Rotatable, Top Down, GTA SA, GTA III</li>
+    <li>Airbreak, mouse fly, unlimited ammo, no car collision, AI Control</li>
+    <li>Up to 30 opponents in the menu</li>
+    <li>Clockwork Carnage grid (tight grid for lots of cars)</li>
+    <li>Raise the car limit to 512 (needs a restart)</li>
+    <li>Car counter</li>
+  </ul>
+
+  <h3>Menu Settings</h3>
+  <ul>
+    <li>Menu size, position, text size and UI scale</li>
+    <li>Airbreak speed, mouse fly speed, scroll speed</li>
+    <li>Hints, ignore keys when tabbed out, controller support</li>
+    <li>View keybinds, load keys from .ini, save and load settings</li>
+  </ul>
+
+  <h3>Experimental</h3>
+  <ul>
+    <li>Compatibility check for your RVGL build</li>
+    <li>Player and camera pointers, object and player counts, timestep</li>
+  </ul>
+
+  <h3>Chaos Mod</h3>
+  <ul>
+    <li>Turn Chaos on or off, quick setup</li>
+    <li>New effect every 5 to 600 seconds (30 is best), or trigger by key, or no timer</li>
+    <li>Filters: unstable, bad for streams, controversial, really unfair</li>
+    <li>Per effect: on/off, length, trigger, times used, custom sound (<code>XMenuAssets/CustomEffectSounds/&lt;id&gt;.mp3</code>)</li>
+    <li>See the effect order, trigger a random effect, export all effects to .csv</li>
+    <li>Look: presets (Default, Seems familiar..., Alternate Left/Right, Classic), position, size, alignment, stacking, background, timer bar colour, show hidden effects, hide UI</li>
+    <li>Sound: volume and sound test</li>
+    <li>Debug: trigger any effect by ID, stop all, refill timers, reset order</li>
+    <li>Settings saved in <code>ZMenu_Chaos.ini</code>, log in <code>ZChaosEffectLog.log</code></li>
+  </ul>
+
+  <h3>Chaos Effects (180)</h3>
+  <p><b>Weapons and pickups:</b> Give Shockwave, Give Firework, Give 3 Fireworks, Give Bomb, Give 3 Water Bombs, Give Electro Pulse, Give Oil Slick, Give Chrome Ball, Give Turbo, Give Fake Pickup, Give Star, the same 11 for all opponents, Remove Current Powerup, Unlimited Ammo</p>
+  <p><b>Explosions and launches:</b> Explode Car, Explode All Opponents, Launch Player, Launch All Cars, Launch into Narnia, Massdriver, Goodbye, Lift Me Up, Invert Current Velocity, Wrong Way</p>
+  <p><b>Teleports:</b> Teleport All Vehicles to You, Teleport All Vehicles in Front of You, Teleport to Random Vehicle, Teleport to Heaven, Teleport to Race Start, Teleport to Current Location, Attach to Nearest Car, Reset, Packet Loss</p>
+  <p><b>Spawns and cars:</b> Spawn Helicopter, Spawn 1000 Beach Balls, TROLLEYED, My sprinkler goes like thisstststststst, Teleport All Objects to You, Oil Leak, Probe UFO, We Come in Peace, Trolley, Go Shopping, Clockwork, Like Clockwork, 30 Opponents, Switch to Random Vehicle, Jump to Frontend :tf: (key only)</p>
+  <p><b>Laps:</b> Add 5 Laps, Add 10 Laps, Remove 1 Lap</p>
+  <p><b>Car shapes:</b> Big Cars, Tiny Cars, Wide Cars, Very Wide Cars, Tall Cars, Long Cars, Flat Cars, Paper Cars, C H O N K Y Cars, Reverse Cars, Tall Bois, Paper Dario, Nightmare Cars</p>
+  <p><b>Object shapes:</b> Big Objects, Tiny Objects, Paper Objects, Wide Objects, Very Wide Objects, Tall Objects, Long Objects, Reverse Objects, Flipped Objects, Flat Objects, Oh god what have you done</p>
+  <p><b>Physics:</b> No Car to Car Collision, Airbreak, Bouncy Cars, Slightly Bouncy Cars, Very Bouncy Cars, Pinball, No Car Gravity, No Mass?, X10 Gravity, Physics have left the chat, GRUG SMASH, LET IT RIP, RIP HARDER, Beyblades, Spinning Traffic, Car Speedup, Need for Speed, Cruise Control, Gravity Field, Hyper Gravity Field, Forcefield, Earthquake, Earthquake while someone's playing dubstep</p>
+  <p><b>Controls:</b> No Steering, Half Steering, Crazy Steering, Steer Bias (Left), Steer Bias (Right), Pedal to the Metal, Disable Brakes, Half Brakes, Reverse Gear, Faulty Gas Pedal, No Control, Tesla Mode</p>
+  <p><b>Time:</b> Slow-mo, Game Speedup, Random Game Speed, Standstill, SUPERHOT</p>
+  <p><b>Camera:</b> GTA 2, GTA -2, Free Camera, Rotatable Camera, San Andreas Camera, Australia Mode, Look Behind, "It's easier to aim", they said, Is it easier to aim yet?, Low FOV, Quake Pro</p>
+  <p><b>World textures:</b> Pepega World, It's Cat Time, Forgot to install CS:S, Unaware</p>
+  <p><b>Text:</b> UwUify, Pepega Text, Kitty Text, Neko Text, Buttsbot</p>
+  <p><b>Screen:</b> Flip Screen, Portrait Mode, Anti-Portrait Mode, DVD Screensaver, Blind, Good luck, Fading Out, Sleepy Mode, Fake Lag, Fake Crash, RainbowPls, Nightmare fuel, 4K RTX Realistic ENB Simulator, QuantV Mode, Crashed! (Canyon Screen Filter), Juiced 2 DS, Jell-o, I need a drink, Thunderstorm, Rainy Weather, Too Much Information, Familiar Chaos UI, Roll Chaos Credits</p>
+  <p><b>Meta:</b> 3 Random Effects, Combo Time, OMEGA COMBO TIME, Clear Active Effects, Refill Active Effect Timers, Reset Effect Cycle, Trigger a Disabled Effect, Fake Effect, Nothing, Spawn Air, Delete All Camels</p>
+
+  <hr>
+  <p>Made by sinaosal. Based on ZMenu RVGL.</p>
+</body>
+</html>

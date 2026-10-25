@@ -1,0 +1,13 @@
+body {
+  max-width: 640px;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  background: #111;
+  color: #ddd;
+}
+
+a { color: #4cf; }
+h2 { margin-top: 30px; }
+hr { border: 0; border-top: 1px solid #333; margin-top: 30px; }
